@@ -242,8 +242,8 @@
 - (CGPathRef)newBadgePathForTextSize:(CGSize)inSize
 {
 	CGFloat arcRadius = ceil((inSize.height+self.pad)/2.0);
-	
-	CGFloat badgeWidthAdjustment = inSize.width - inSize.height/2.0;
+
+	CGFloat badgeWidthAdjustment = inSize.width - inSize.height/2.0 + self.badgeWidthAdjustment;
 	CGFloat badgeWidth = 2.0*arcRadius;
 	
 	if ( badgeWidthAdjustment > 0.0 )

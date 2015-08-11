@@ -81,6 +81,10 @@
 // The badge view bounds should be wider than space needed to draw the badge.
 @property (readonly,nonatomic) CGSize badgeSize;
 
+// How much should the badge image width be increased; this is different from pad
+// in that it only increases the width of the badge
+@property (assign,nonatomic) CGFloat badgeWidthAdjustment;
+
 // The number of pixels between the number inside the badge and the stroke around the badge. This value 
 // is approximate, as the font geometry might effectively slightly increase or decrease the apparent pad.
 @property (nonatomic) NSUInteger pad;
